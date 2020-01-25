@@ -1,0 +1,28 @@
+.employeeList{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.employee{
+  flex-basis: 28%;
+  margin: 1em;
+  padding: 1em;
+  background-color: rgb(183, 215, 226);
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px -16px rgba(0,0,0,0); 
+box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px -16px rgba(0,0,0,0);
+}
+
+.employeeForm{
+  margin: 150px;
+  text-align: center;
+}
+
+.employee:hover{
+  flex-basis: 30%;
+  border: 3px solid goldenrod
+}
+
+.form-group{
+  margin: 10px;
+}

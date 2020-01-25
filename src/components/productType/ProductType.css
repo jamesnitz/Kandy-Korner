@@ -1,24 +1,25 @@
-.locations{
+.productTypes{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
-.location{
+.ProductTypes__header{
+  margin-top: 50px;
+  text-align: center;
+}
+
+.productType{
     flex-basis: 28%;
     margin: 1em;
     padding: 1em;
+    text-align: center;
     background-color: rgb(183, 215, 226);
     -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px -16px rgba(0,0,0,0); 
 box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px -16px rgba(0,0,0,0);
 }
 
-.locations__header{
-  margin-top: 50px;
-  text-align: center;
-}
-
-.location:hover{
+.productType:hover{
+  border: 3px solid goldenrod;
   flex-basis: 30%;
-  border: 3px solid goldenrod
 }

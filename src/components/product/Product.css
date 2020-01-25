@@ -1,10 +1,10 @@
-.locations{
+.products{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.location{
+.product{
     flex-basis: 28%;
     margin: 1em;
     padding: 1em;
@@ -13,12 +13,11 @@
 box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px -16px rgba(0,0,0,0);
 }
 
-.locations__header{
+.product__header{
   margin-top: 50px;
   text-align: center;
 }
-
-.location:hover{
+.product:hover{
   flex-basis: 30%;
   border: 3px solid goldenrod
 }
