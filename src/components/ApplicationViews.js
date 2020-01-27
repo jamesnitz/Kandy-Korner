@@ -9,6 +9,9 @@ import ProductTypeList from "./productType/ProductTypeList"
 import { EmployeeProvider } from "./employee/EmployeeProvider"
 import EmployeeList from "./employee/EmployeeList"
 import EmployeeForm from "./employee/EmployeeForm"
+import Login from "./auth/Login"
+import CustomerList from "./customers/CustomerList"
+import { CustomerProvider } from "./customers/CustomerProvider"
 
 export default () => {
   return (
@@ -21,7 +24,7 @@ export default () => {
 
       <ProductProvider>
         <ProductTypeProvider>
-          <Route path="/products" >
+          <Route path="/products">
             <ProductList />
           </Route>
         </ProductTypeProvider>
@@ -32,6 +35,13 @@ export default () => {
           <ProductTypeList />
         </Route>
       </ProductTypeProvider>
+
+      <CustomerProvider>
+        {/* Render the animal list when http://localhost:3000/animals */}
+        <Route path="/customers">
+          <CustomerList />
+        </Route>
+      </CustomerProvider>
 
       <EmployeeProvider>
         <LocationProvider>

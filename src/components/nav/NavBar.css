@@ -9,11 +9,11 @@
 
 .navHeader{
   color: #000000;
-background: #FFFFFF;
-text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
-color: #000000;
-background: #FFFFFF;
-background-color: plum;
+  background: #FFFFFF;
+  text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
+  color: #000000;
+  background: #FFFFFF;
+  background-color: plum;
 }
 
 .navbar__item {
@@ -26,5 +26,8 @@ background-color: plum;
   padding: 5px;
   background-color: chartreuse;
   -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px -16px rgba(0,0,0,0); 
-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px -16px rgba(0,0,0,0);
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px -16px rgba(0,0,0,0);
+}
+.navbar__item:hover{
+  background-color: rgb(110, 219, 0)
 }

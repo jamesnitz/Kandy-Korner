@@ -1,10 +1,10 @@
-.employeeList{
+.customerList{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
-.employee{
+.customer{
   flex-basis: 28%;
   margin: 1em;
   padding: 1em;
@@ -13,12 +13,12 @@
 box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px -16px rgba(0,0,0,0);
 }
 
-.employeeForm{
-  margin: 150px;
+.customerForm{
+  margin: 150px;  
   text-align: center;
 }
 
-.employee:hover{
+.customer:hover{
   flex-basis: 30%;
   border: 3px solid goldenrod
 }
@@ -27,7 +27,7 @@ box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px -16px rgba(0,0,0,0);
   margin: 10px;
 }
 
-.employee_Header{
+.customer_Header{
   margin-top: 50px;
   text-align: center;
   color: #000000;

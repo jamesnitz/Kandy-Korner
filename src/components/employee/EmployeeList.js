@@ -10,7 +10,7 @@ export default (props) => {
   const { locations } = useContext(LocationContext)
   return (
     <>
-    <h1>Employees</h1>
+    <h1 className="employee_Header">Employees</h1>
     <button onClick={() => props.history.push("/employees/create")}>
       Add Employee
     </button>

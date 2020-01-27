@@ -2,12 +2,12 @@ import React from "react"
 import { Link } from "react-router-dom"
 import "./NavBar.css"
 
-export default () => {
+export default (props) => {
     return (
         <ul className="navbar">
-          <div className="navHeader">
-          <h3>KANDY KORNER</h3>
-          </div>
+            <div className="navHeader">
+                <h3>KANDY KORNER</h3>
+            </div>
             <li className="navbar__item active">
                 <Link className="navbar__link" to="/">Locations</Link>
             </li>
@@ -23,6 +23,20 @@ export default () => {
             <li className="navbar__item">
                 <Link className="navbar__link" to="/employees">Employees</Link>
             </li>
+            {
+                localStorage.getItem("kennel_customer")
+                    ? <li className="navbar__item">
+                        <Link className="navbar__link"
+                            to=""
+                            onClick={e => {
+                                e.preventDefault()
+                                localStorage.removeItem("kennel_customer")
+                                props.history.push("/")
+                            }}
+                        >Logout</Link>
+                    </li>
+                    : ""
+            }
         </ul>
     )
 }
