@@ -8,7 +8,7 @@ import Register from "./auth/Register"
 export default () => (
     <>
         <Route render={() => {
-            if (localStorage.getItem("kennel_customer")) {
+            if (localStorage.getItem("kandy_customer")) {
                 return (
                     <>
                         <Route render={props => <NavBar {...props} />} />

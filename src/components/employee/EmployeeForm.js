@@ -24,25 +24,25 @@ export default props => {
         hourlyrate: hourlyRate,
         manager: manager.current.checked,
         fullTime: fullTime.current.checked
-      })
+      }).then(props.history.push("/employees"))
     } 
   }
 
   return (
     <form className="employeeForm">
       <h2 className="employeeForm__title">New Employee</h2>
-      <div className="form-group">
-        <label htmlFor="employeeName">Employee name</label>
-        <input
-          type="text"
-          id="employeeName"
-          ref={employeeName}
-          required
-          autoFocus
-          className="form-control"
-          placeholder="Employee name"
-      />
-      </div>
+        <div className="form-group">
+          <label htmlFor="employeeName">Employee name</label>
+          <input
+            type="text"
+            id="employeeName"
+            ref={employeeName}
+            required
+            autoFocus
+            className="form-control"
+            placeholder="Employee name"
+        />
+        </div>
       <div className="form-group">
         <label htmlFor="location">Assign to location</label>
         <select
@@ -107,7 +107,6 @@ export default props => {
           evt => {
             evt.preventDefault(); // Prevent browser from submitting the form
             constructNewEmployee();
-            props.history.push("/employees");
           }
         }
         className="btn btn-primary">

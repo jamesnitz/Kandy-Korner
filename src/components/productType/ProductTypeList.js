@@ -8,7 +8,7 @@ export default () => {
 
     return (
       <>
-          <h3 className="ProductTypes__header">ProductTypes</h3>
+          <h1 className="ProductTypes__header">ProductTypes</h1>
         <div className="productTypes">
         {
             productTypes.map(pt => <ProductType key={pt.id} productType={pt} />)

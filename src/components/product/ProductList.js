@@ -4,13 +4,16 @@ import Product from "./Product"
 import { ProductTypeContext } from "../productType/ProductTypeProvider"
 
 
-export default () => {
+export default (props) => {
   const { products } = useContext(ProductContext)
   const { productTypes } =useContext(ProductTypeContext)
 
   return(
     <>
-      <h3 className="product__header">Products</h3>
+      <h1 className="product__header">Products</h1>
+    <button onClick={() => props.history.push("/products/create")}>
+      Purchase Kandy
+    </button>
     <div className="products">
       {
         products.map(product => {

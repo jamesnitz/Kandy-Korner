@@ -7,6 +7,6 @@ export default ({ employee, location }) => (
         <address className="employee__name">works at: {location.name}</address>
         <address className="employee__manager">{employee.manager ? "Manager" : "associate"}</address>
         <address className="employee__fullTime">{employee.fullTime ? "works Full Time" : "works part time"}</address>
-        <address className="employee__hourlyRate">{employee.hourlyRate}</address>
+        <address className="employee__hourlyRate">Salary: ${employee.hourlyRate}/hour</address>
     </section>
 )

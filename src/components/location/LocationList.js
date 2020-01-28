@@ -8,7 +8,7 @@ export default () => {
 
     return (
         <>
-          <h3 className="locations__header">Locations</h3>
+          <h1 className="locations__header">Locations</h1>
         <div className="locations">
         {
             locations.map(loc => <Location key={loc.id} location={loc} />)
